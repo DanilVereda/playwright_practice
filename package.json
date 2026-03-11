@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/DanilVereda/playwright_practice#readme",
   "devDependencies": {
+    "@faker-js/faker": "^10.3.0",
     "@playwright/test": "^1.58.2",
     "@types/node": "^25.3.3"
   }
