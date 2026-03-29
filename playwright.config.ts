@@ -46,12 +46,22 @@ export default defineConfig({
       use: { ...devices['Desktop Chrome'] },
     },
     {
+      name: 'sign-up',
+      testMatch: 'tests/qauto/sign-up.spec.ts',
+      use: { ...devices['Desktop Chrome'] },
+    },
+    {
       name: 'e2e-smoke',
-      testIgnore: 'tests/setup/**.setup.ts',
+      testIgnore: ['tests/setup/**.setup.ts', 'tests/qauto/sign-up.spec.ts'],
       use: {
         ...devices['Desktop Chrome'],
-        storageState: './test-data/states/validUserStorageState.json',
+        storageState: './test-data/states/user.json',
       },
+      dependencies: ['setup'],
+    },
+    {
+      name: 'api-smoke',
+      testMatch: 'tests/api/**.api.ts',
       dependencies: ['setup'],
     },
 
