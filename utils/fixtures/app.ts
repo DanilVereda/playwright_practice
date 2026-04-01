@@ -6,7 +6,7 @@ import ProfilePage from '../../pom/pages/ProfilePage';
 import ForgotPasswordForm from '../../pom/forms/ForgotPasswordForm';
 import SignUpForm from '../../pom/forms/SignUpForm';
 import AddCarForm from '../../pom/forms/AddCarForm';
-import Sidebar from '../../pom/components/SideBar';
+import Sidebar from '../../pom/components/Sidebar';
 
 type App = {
   page: Page;
